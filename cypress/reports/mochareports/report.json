@@ -1,0 +1,648 @@
+{
+  "stats": {
+    "suites": 7,
+    "tests": 16,
+    "passes": 16,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-07-29T07:57:01.963Z",
+    "end": "2021-07-29T07:58:35.555Z",
+    "duration": 38519,
+    "testsRegistered": 16,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "b915c0fe-18f4-4454-9f42-6b9b4ca6fe9e",
+      "title": "",
+      "fullFile": "cypress/integration/product-test.spec.js",
+      "file": "cypress/integration/product-test.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "479bddd8-a3e6-482f-a96a-ac1c0bc64b51",
+          "title": "To Test Add to Cart functionality",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "should add item to cart & give a success message",
+              "fullTitle": "To Test Add to Cart functionality should add item to cart & give a success message",
+              "timedOut": null,
+              "duration": 2087,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "productPage.addToCart();",
+              "err": {},
+              "uuid": "18512fe1-2419-4eec-a7a7-be6555cf8a51",
+              "parentUUID": "479bddd8-a3e6-482f-a96a-ac1c0bc64b51",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Test add to cart button color",
+              "fullTitle": "To Test Add to Cart functionality Test add to cart button color",
+              "timedOut": null,
+              "duration": 1466,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "productPage.verifyButtonColor();",
+              "err": {},
+              "uuid": "327a77e0-25d9-4b39-98e6-94bfb77b7e3a",
+              "parentUUID": "479bddd8-a3e6-482f-a96a-ac1c0bc64b51",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "18512fe1-2419-4eec-a7a7-be6555cf8a51",
+            "327a77e0-25d9-4b39-98e6-94bfb77b7e3a"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 3553,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "b8792e5b-a2ad-41cf-bd86-072ce94cbc88",
+      "title": "",
+      "fullFile": "cypress/integration/task_2.spec.js",
+      "file": "cypress/integration/task_2.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "641b08c8-f3f3-4a51-9d8c-cfa8a55063bd",
+          "title": "Cypress Task 2: Test Suite 1",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Test Case 1: Fill the form using the data stored in data.json file.",
+              "fullTitle": "Cypress Task 2: Test Suite 1 Test Case 1: Fill the form using the data stored in data.json file.",
+              "timedOut": null,
+              "duration": 7495,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://demoqa.com/text-box'); // cy.fixture('data.json').then((data) => {})\ncy.get('#userName').type(_data.default.FullName);\ncy.get('#userEmail').type(_data.default.Email);\ncy.get('#currentAddress').type(_data.default.CurrentAddress);\ncy.get('#permanentAddress').type(_data.default.PermanentAddress);\ncy.get('#submit').click();\ncy.get('#name').should('contain', _data.default.FullName);\ncy.get('#email').should('contain', _data.default.Email);\ncy.get('p#currentAddress').should('contain', _data.default.CurrentAddress);\ncy.get('p#permanentAddress').should('contain', _data.default.PermanentAddress);",
+              "err": {},
+              "uuid": "1a9d5cbd-de37-49ac-9859-b97e786f186d",
+              "parentUUID": "641b08c8-f3f3-4a51-9d8c-cfa8a55063bd",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "1a9d5cbd-de37-49ac-9859-b97e786f186d"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 7495,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "1ec53b3a-cbc3-4963-91c5-c6752ea6d5d8",
+          "title": "Cypress Task 2: Test Suite 2",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Test Case 21: To upload a file successfully",
+              "fullTitle": "Cypress Task 2: Test Suite 2 Test Case 21: To upload a file successfully",
+              "timedOut": null,
+              "duration": 2739,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://demoqa.com/upload-download');\ncy.fixture('sampleFile.jpeg').then(image => {});\ncy.get('#uploadFile').attachFile('sampleFile.jpeg');\ncy.get('#uploadedFilePath').should('contain', 'sampleFile.jpeg');",
+              "err": {},
+              "uuid": "ea2f8f76-f1d1-46af-9217-cd7d999dc410",
+              "parentUUID": "1ec53b3a-cbc3-4963-91c5-c6752ea6d5d8",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "ea2f8f76-f1d1-46af-9217-cd7d999dc410"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 2739,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "5ff14b90-7d00-444e-a6d1-b2809f1e00d0",
+          "title": "Cypress Task 2: Test Suite 3",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Add, check, filter, check displayed",
+              "fullTitle": "Cypress Task 2: Test Suite 3 Add, check, filter, check displayed",
+              "timedOut": null,
+              "duration": 1832,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "//Add two items to the todo list\n// cy.fixture('data.json').then((data) => {})\ncy.get('.new-todo').type(\"Item 1{enter}\").type(\"Item 2{enter}\"); // cy.get('.new-todo').type(data.todo2).type('{enter}');\n//Assertions\ncy.get('.ng-binding').should('contain', 'Item 1');\ncy.get('.ng-binding').should('contain', 'Item 2'); //Mark an item as completed\ncy.contains('li', 'Item 1').find('.toggle').click(); //Assertions\ncy.contains('li', 'Item 1').find('.toggle').should('be.checked'); //Filters the list by \"Completed\"\ncy.get('[href=\"#/completed\"]').click(); //cy.contains('a','Completed').click()\n// cy.get('ul.filters > :nth-child(3)').click();\n//Checks that only the completed item is displayed\ncy.get('.ng-binding').should('contain', 'Item 1').should('exist');\ncy.get('.ng-binding').should('not.contain', 'Item 2');",
+              "err": {},
+              "uuid": "25f4c7b9-fdd7-4398-8a8a-8d51c31bba13",
+              "parentUUID": "5ff14b90-7d00-444e-a6d1-b2809f1e00d0",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "25f4c7b9-fdd7-4398-8a8a-8d51c31bba13"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 1832,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "cb2826c4-799d-4c34-ae42-56ccca3376c0",
+      "title": "",
+      "fullFile": "cypress/integration/task-3.spec.js",
+      "file": "cypress/integration/task-3.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [
+        {
+          "title": "land on home page and click on monitors filter, verify product details then click on monitor",
+          "fullTitle": "land on home page and click on monitors filter, verify product details then click on monitor",
+          "timedOut": null,
+          "duration": 3653,
+          "state": "passed",
+          "speed": "slow",
+          "pass": true,
+          "fail": false,
+          "pending": false,
+          "context": null,
+          "code": "homePage.openUrl();\nhomePage.clickOnMonitorLink();\nhomePage.verifyTitle();\nhomePage.verifyPrice();\nhomePage.verifyDesc();\nhomePage.clickOnAsusMonitor();",
+          "err": {},
+          "uuid": "8476d4c0-846a-4d04-acde-1c30fda6c281",
+          "parentUUID": "cb2826c4-799d-4c34-ae42-56ccca3376c0",
+          "isHook": false,
+          "skipped": false
+        },
+        {
+          "title": "add to cart",
+          "fullTitle": "add to cart",
+          "timedOut": null,
+          "duration": 898,
+          "state": "passed",
+          "speed": "slow",
+          "pass": true,
+          "fail": false,
+          "pending": false,
+          "context": null,
+          "code": "productPage.openUrl();\nproductPage.addToCart();\nproductPage.verifyButtonColor();",
+          "err": {},
+          "uuid": "e2340662-d706-46fa-80a3-c265725bf1b3",
+          "parentUUID": "cb2826c4-799d-4c34-ae42-56ccca3376c0",
+          "isHook": false,
+          "skipped": false
+        }
+      ],
+      "suites": [],
+      "passes": [
+        "8476d4c0-846a-4d04-acde-1c30fda6c281",
+        "e2340662-d706-46fa-80a3-c265725bf1b3"
+      ],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 4551,
+      "root": true,
+      "rootEmpty": false,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "121022a7-6d82-4965-946a-76ff9b739d44",
+      "title": "",
+      "fullFile": "cypress/integration/task1_suite1.spec.js",
+      "file": "cypress/integration/task1_suite1.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "84e6fe1b-102b-4580-8b29-b20155a65dff",
+          "title": "Test Suite 1",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Test Case 1: Submit form with valid credentials & check validation msg ",
+              "fullTitle": "Test Suite 1 Test Case 1: Submit form with valid credentials & check validation msg ",
+              "timedOut": null,
+              "duration": 4460,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('#username').type('tomsmith');\ncy.get('#password').type('SuperSecretPassword!');\ncy.get('.fa').click();\ncy.get('#flash').should('contain', 'You logged into a secure area!');",
+              "err": {},
+              "uuid": "e8b9686b-5f37-4b8d-9a60-8c1078af32c9",
+              "parentUUID": "84e6fe1b-102b-4580-8b29-b20155a65dff",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Test Case 2: Logout Successfully ",
+              "fullTitle": "Test Suite 1 Test Case 2: Logout Successfully ",
+              "timedOut": null,
+              "duration": 2000,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('#username').type('tomsmith');\ncy.get('#password').type('SuperSecretPassword!');\ncy.get('.fa').click();\ncy.get('#flash').should('contain', 'You logged into a secure area!');\ncy.get('.icon-2x').click();\ncy.get('#flash').should('contain', 'You logged out of the secure area!');",
+              "err": {},
+              "uuid": "a58e695e-cab3-472b-98ce-c3b255f69cf2",
+              "parentUUID": "84e6fe1b-102b-4580-8b29-b20155a65dff",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Test Case 3: Submit form with invalid crdentials and check error message",
+              "fullTitle": "Test Suite 1 Test Case 3: Submit form with invalid crdentials and check error message",
+              "timedOut": null,
+              "duration": 1703,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('#username').type('invalid username');\ncy.get('#password').type('invalid password');\ncy.get('.fa').click();\ncy.get('#flash').should('contain', 'Your username is invalid');",
+              "err": {},
+              "uuid": "fa0065d6-b00a-40d1-89ec-60e333a55641",
+              "parentUUID": "84e6fe1b-102b-4580-8b29-b20155a65dff",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "e8b9686b-5f37-4b8d-9a60-8c1078af32c9",
+            "a58e695e-cab3-472b-98ce-c3b255f69cf2",
+            "fa0065d6-b00a-40d1-89ec-60e333a55641"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 8163,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "e32b3c6a-2fdb-47fd-9d6b-673b2d0db292",
+      "title": "",
+      "fullFile": "cypress/integration/task1_suite2.spec.js",
+      "file": "cypress/integration/task1_suite2.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "3f80c67e-69a3-44e0-90b1-372ae17976c8",
+          "title": "Test Suite 2",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Test Case 1: To search for an entry in the table. ",
+              "fullTitle": "Test Suite 2 Test Case 1: To search for an entry in the table. ",
+              "timedOut": null,
+              "duration": 1188,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('#task-table-filter').type('Bug');\ncy.get('td').should('contain', 'Bug');",
+              "err": {},
+              "uuid": "b08aa407-be38-43fe-a49a-0591f41aae17",
+              "parentUUID": "3f80c67e-69a3-44e0-90b1-372ae17976c8",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Test Case 2:to check that filters are disabled before clicking on filter icon, then filter by username",
+              "fullTitle": "Test Suite 2 Test Case 2:to check that filters are disabled before clicking on filter icon, then filter by username",
+              "timedOut": null,
+              "duration": 887,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('.form-control').should('be.disabled');\ncy.get('.btn-filter').click();\ncy.get('[placeholder=\"Username\"]').type('jacobs');\ncy.get('td').should('contain', 'jacobs');",
+              "err": {},
+              "uuid": "0e9f1ce7-cafa-402e-85c1-09f971af9050",
+              "parentUUID": "3f80c67e-69a3-44e0-90b1-372ae17976c8",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "b08aa407-be38-43fe-a49a-0591f41aae17",
+            "0e9f1ce7-cafa-402e-85c1-09f971af9050"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 2075,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "67a7b8c9-61a0-4a92-945f-6913d4bcfa08",
+      "title": "",
+      "fullFile": "cypress/integration/task1_suite3.spec.js",
+      "file": "cypress/integration/task1_suite3.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "8f7b4380-47b4-4338-bfea-7e141c7299f5",
+          "title": "Test Suite 3",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Test Case 1: Single checkbox demo ",
+              "fullTitle": "Test Suite 3 Test Case 1: Single checkbox demo ",
+              "timedOut": null,
+              "duration": 1742,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('#isAgeSelected').check();\ncy.get('#txtAge').should('contain', 'Success - Check box is checked');",
+              "err": {},
+              "uuid": "7fca0af7-ba37-481b-af38-581dccaad5e6",
+              "parentUUID": "8f7b4380-47b4-4338-bfea-7e141c7299f5",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Test Case 2:Multiple checkbox demo ",
+              "fullTitle": "Test Suite 3 Test Case 2:Multiple checkbox demo ",
+              "timedOut": null,
+              "duration": 482,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('#check1').click();\ncy.get('.cb1-element').should('be.checked');",
+              "err": {},
+              "uuid": "e4099de9-a20f-4404-b0a5-437942f20d8f",
+              "parentUUID": "8f7b4380-47b4-4338-bfea-7e141c7299f5",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "7fca0af7-ba37-481b-af38-581dccaad5e6",
+            "e4099de9-a20f-4404-b0a5-437942f20d8f"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 2224,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "ef55f705-6702-46c4-ab82-595490f9aee3",
+      "title": "",
+      "fullFile": "cypress/integration/home-test.spec.js",
+      "file": "cypress/integration/home-test.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "193b8d91-237f-48bc-88c9-4357089c9337",
+          "title": "To test monitors filter, verify product details then click on a monitor",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": " verify product title, price & desc",
+              "fullTitle": "To test monitors filter, verify product details then click on a monitor  verify product title, price & desc",
+              "timedOut": null,
+              "duration": 3737,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "homePage.verifyTitle();\nhomePage.verifyPrice();\nhomePage.verifyDesc();",
+              "err": {},
+              "uuid": "fc55d676-7389-4e30-80aa-c8709089bd4a",
+              "parentUUID": "193b8d91-237f-48bc-88c9-4357089c9337",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should redirect to ASUS monitor page",
+              "fullTitle": "To test monitors filter, verify product details then click on a monitor should redirect to ASUS monitor page",
+              "timedOut": null,
+              "duration": 2150,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "homePage.clickOnAsusMonitor();",
+              "err": {},
+              "uuid": "e1b36038-e52b-43b2-9025-3f9f3adc6e1d",
+              "parentUUID": "193b8d91-237f-48bc-88c9-4357089c9337",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "fc55d676-7389-4e30-80aa-c8709089bd4a",
+            "e1b36038-e52b-43b2-9025-3f9f3adc6e1d"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 5887,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mocha",
+        "quite": true,
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "charts": true
+      },
+      "version": "5.2.0"
+    }
+  }
+}

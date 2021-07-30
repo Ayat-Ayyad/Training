@@ -1,0 +1,127 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-07-29T07:57:01.963Z",
+    "end": "2021-07-29T07:57:10.955Z",
+    "duration": 8992,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "ef55f705-6702-46c4-ab82-595490f9aee3",
+      "title": "",
+      "fullFile": "cypress/integration/home-test.spec.js",
+      "file": "cypress/integration/home-test.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "193b8d91-237f-48bc-88c9-4357089c9337",
+          "title": "To test monitors filter, verify product details then click on a monitor",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": " verify product title, price & desc",
+              "fullTitle": "To test monitors filter, verify product details then click on a monitor  verify product title, price & desc",
+              "timedOut": null,
+              "duration": 3737,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "homePage.verifyTitle();\nhomePage.verifyPrice();\nhomePage.verifyDesc();",
+              "err": {},
+              "uuid": "fc55d676-7389-4e30-80aa-c8709089bd4a",
+              "parentUUID": "193b8d91-237f-48bc-88c9-4357089c9337",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should redirect to ASUS monitor page",
+              "fullTitle": "To test monitors filter, verify product details then click on a monitor should redirect to ASUS monitor page",
+              "timedOut": null,
+              "duration": 2150,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "homePage.clickOnAsusMonitor();",
+              "err": {},
+              "uuid": "e1b36038-e52b-43b2-9025-3f9f3adc6e1d",
+              "parentUUID": "193b8d91-237f-48bc-88c9-4357089c9337",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "fc55d676-7389-4e30-80aa-c8709089bd4a",
+            "e1b36038-e52b-43b2-9025-3f9f3adc6e1d"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 5887,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mocha",
+        "quite": true,
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "charts": true
+      },
+      "version": "5.2.0"
+    }
+  }
+}

@@ -1,0 +1,186 @@
+{
+  "stats": {
+    "suites": 3,
+    "tests": 3,
+    "passes": 3,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-07-29T07:57:31.613Z",
+    "end": "2021-07-29T07:57:49.528Z",
+    "duration": 17915,
+    "testsRegistered": 3,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "b8792e5b-a2ad-41cf-bd86-072ce94cbc88",
+      "title": "",
+      "fullFile": "cypress/integration/task_2.spec.js",
+      "file": "cypress/integration/task_2.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "641b08c8-f3f3-4a51-9d8c-cfa8a55063bd",
+          "title": "Cypress Task 2: Test Suite 1",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Test Case 1: Fill the form using the data stored in data.json file.",
+              "fullTitle": "Cypress Task 2: Test Suite 1 Test Case 1: Fill the form using the data stored in data.json file.",
+              "timedOut": null,
+              "duration": 7495,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://demoqa.com/text-box'); // cy.fixture('data.json').then((data) => {})\ncy.get('#userName').type(_data.default.FullName);\ncy.get('#userEmail').type(_data.default.Email);\ncy.get('#currentAddress').type(_data.default.CurrentAddress);\ncy.get('#permanentAddress').type(_data.default.PermanentAddress);\ncy.get('#submit').click();\ncy.get('#name').should('contain', _data.default.FullName);\ncy.get('#email').should('contain', _data.default.Email);\ncy.get('p#currentAddress').should('contain', _data.default.CurrentAddress);\ncy.get('p#permanentAddress').should('contain', _data.default.PermanentAddress);",
+              "err": {},
+              "uuid": "1a9d5cbd-de37-49ac-9859-b97e786f186d",
+              "parentUUID": "641b08c8-f3f3-4a51-9d8c-cfa8a55063bd",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "1a9d5cbd-de37-49ac-9859-b97e786f186d"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 7495,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "1ec53b3a-cbc3-4963-91c5-c6752ea6d5d8",
+          "title": "Cypress Task 2: Test Suite 2",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Test Case 21: To upload a file successfully",
+              "fullTitle": "Cypress Task 2: Test Suite 2 Test Case 21: To upload a file successfully",
+              "timedOut": null,
+              "duration": 2739,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://demoqa.com/upload-download');\ncy.fixture('sampleFile.jpeg').then(image => {});\ncy.get('#uploadFile').attachFile('sampleFile.jpeg');\ncy.get('#uploadedFilePath').should('contain', 'sampleFile.jpeg');",
+              "err": {},
+              "uuid": "ea2f8f76-f1d1-46af-9217-cd7d999dc410",
+              "parentUUID": "1ec53b3a-cbc3-4963-91c5-c6752ea6d5d8",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "ea2f8f76-f1d1-46af-9217-cd7d999dc410"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 2739,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "5ff14b90-7d00-444e-a6d1-b2809f1e00d0",
+          "title": "Cypress Task 2: Test Suite 3",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Add, check, filter, check displayed",
+              "fullTitle": "Cypress Task 2: Test Suite 3 Add, check, filter, check displayed",
+              "timedOut": null,
+              "duration": 1832,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "//Add two items to the todo list\n// cy.fixture('data.json').then((data) => {})\ncy.get('.new-todo').type(\"Item 1{enter}\").type(\"Item 2{enter}\"); // cy.get('.new-todo').type(data.todo2).type('{enter}');\n//Assertions\ncy.get('.ng-binding').should('contain', 'Item 1');\ncy.get('.ng-binding').should('contain', 'Item 2'); //Mark an item as completed\ncy.contains('li', 'Item 1').find('.toggle').click(); //Assertions\ncy.contains('li', 'Item 1').find('.toggle').should('be.checked'); //Filters the list by \"Completed\"\ncy.get('[href=\"#/completed\"]').click(); //cy.contains('a','Completed').click()\n// cy.get('ul.filters > :nth-child(3)').click();\n//Checks that only the completed item is displayed\ncy.get('.ng-binding').should('contain', 'Item 1').should('exist');\ncy.get('.ng-binding').should('not.contain', 'Item 2');",
+              "err": {},
+              "uuid": "25f4c7b9-fdd7-4398-8a8a-8d51c31bba13",
+              "parentUUID": "5ff14b90-7d00-444e-a6d1-b2809f1e00d0",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "25f4c7b9-fdd7-4398-8a8a-8d51c31bba13"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 1832,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mocha",
+        "quite": true,
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "charts": true
+      },
+      "version": "5.2.0"
+    }
+  }
+}

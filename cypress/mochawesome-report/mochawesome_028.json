@@ -1,0 +1,127 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-07-29T06:32:33.712Z",
+    "end": "2021-07-29T06:32:37.932Z",
+    "duration": 4220,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "dff13e69-47b1-4b8c-95c4-1ed3d3eb087e",
+      "title": "",
+      "fullFile": "cypress/integration/task1_suite2.spec.js",
+      "file": "cypress/integration/task1_suite2.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "0180edaa-00a0-4dbf-a65e-41a45a74968f",
+          "title": "Test Suite 2",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Test Case 1: To search for an entry in the table. ",
+              "fullTitle": "Test Suite 2 Test Case 1: To search for an entry in the table. ",
+              "timedOut": null,
+              "duration": 1176,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('#task-table-filter').type('Bug');\ncy.get('td').should('contain', 'Bug');",
+              "err": {},
+              "uuid": "909cec8e-892d-4689-b7dc-4b32ca0b174d",
+              "parentUUID": "0180edaa-00a0-4dbf-a65e-41a45a74968f",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Test Case 2:to check that filters are disabled before clicking on filter icon, then filter by username",
+              "fullTitle": "Test Suite 2 Test Case 2:to check that filters are disabled before clicking on filter icon, then filter by username",
+              "timedOut": null,
+              "duration": 869,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('.form-control').should('be.disabled');\ncy.get('.btn-filter').click();\ncy.get('.filters > :nth-child(2)').type('jacobs');\ncy.get('td').should('contain', 'jacobs');",
+              "err": {},
+              "uuid": "57988b5e-6ad5-4067-81b0-cfd1f4c972fe",
+              "parentUUID": "0180edaa-00a0-4dbf-a65e-41a45a74968f",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "909cec8e-892d-4689-b7dc-4b32ca0b174d",
+            "57988b5e-6ad5-4067-81b0-cfd1f4c972fe"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 2045,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/mochawesome-report",
+        "quite": true,
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "charts": true
+      },
+      "version": "5.2.0"
+    }
+  }
+}

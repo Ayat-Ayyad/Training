@@ -1,0 +1,127 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-07-29T06:50:41.895Z",
+    "end": "2021-07-29T06:50:47.116Z",
+    "duration": 5221,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "30950c22-2060-4d80-82ca-c03103f27650",
+      "title": "",
+      "fullFile": "cypress/integration/task1_suite3.spec.js",
+      "file": "cypress/integration/task1_suite3.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "0362ed31-6528-4dc4-beab-f67ac55128b0",
+          "title": "Test Suite 3",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Test Case 1: Single checkbox demo ",
+              "fullTitle": "Test Suite 3 Test Case 1: Single checkbox demo ",
+              "timedOut": null,
+              "duration": 2827,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('#isAgeSelected').check();\ncy.get('#txtAge').should('contain', 'Success - Check box is checked');",
+              "err": {},
+              "uuid": "b289cd67-d32d-4a8b-a0e6-b9d28b0936cb",
+              "parentUUID": "0362ed31-6528-4dc4-beab-f67ac55128b0",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Test Case 2:Multiple checkbox demo ",
+              "fullTitle": "Test Suite 3 Test Case 2:Multiple checkbox demo ",
+              "timedOut": null,
+              "duration": 608,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('#check1').click();\ncy.get('.cb1-element').should('be.checked');",
+              "err": {},
+              "uuid": "60e2b199-8b75-48ed-8121-9776a32f8536",
+              "parentUUID": "0362ed31-6528-4dc4-beab-f67ac55128b0",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "b289cd67-d32d-4a8b-a0e6-b9d28b0936cb",
+            "60e2b199-8b75-48ed-8121-9776a32f8536"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 3435,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/mochawesome-report",
+        "quite": true,
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "charts": true
+      },
+      "version": "5.2.0"
+    }
+  }
+}

@@ -1,0 +1,146 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 3,
+    "passes": 3,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-07-29T06:37:43.273Z",
+    "end": "2021-07-29T06:37:54.151Z",
+    "duration": 10878,
+    "testsRegistered": 3,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "3dcc1ab1-8a0e-4b62-a2ae-77c3e409a490",
+      "title": "",
+      "fullFile": "cypress/integration/task1_suite1.spec.js",
+      "file": "cypress/integration/task1_suite1.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "8d5ff138-5178-4cde-b28a-83f07290e007",
+          "title": "Test Suite 1",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Test Case 1: Submit form with valid credentials & check validation msg ",
+              "fullTitle": "Test Suite 1 Test Case 1: Submit form with valid credentials & check validation msg ",
+              "timedOut": null,
+              "duration": 4396,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('#username').type('tomsmith');\ncy.get('#password').type('SuperSecretPassword!');\ncy.get('.fa').click();\ncy.get('#flash').should('contain', 'You logged into a secure area!');",
+              "err": {},
+              "uuid": "65982926-9c9e-4de3-bc84-40d3539b58a6",
+              "parentUUID": "8d5ff138-5178-4cde-b28a-83f07290e007",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Test Case 2: Logout Successfully ",
+              "fullTitle": "Test Suite 1 Test Case 2: Logout Successfully ",
+              "timedOut": null,
+              "duration": 1940,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('#username').type('tomsmith');\ncy.get('#password').type('SuperSecretPassword!');\ncy.get('.fa').click();\ncy.get('#flash').should('contain', 'You logged into a secure area!');\ncy.get('.icon-2x').click();\ncy.get('#flash').should('contain', 'You logged out of the secure area!');",
+              "err": {},
+              "uuid": "bb1a62f9-0f32-4ac5-8a07-c3ccf116537f",
+              "parentUUID": "8d5ff138-5178-4cde-b28a-83f07290e007",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Test Case 3: Submit form with invalid crdentials and check error message",
+              "fullTitle": "Test Suite 1 Test Case 3: Submit form with invalid crdentials and check error message",
+              "timedOut": null,
+              "duration": 1708,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('#username').type('invalid username');\ncy.get('#password').type('invalid password');\ncy.get('.fa').click();\ncy.get('#flash').should('contain', 'Your username is invalid');",
+              "err": {},
+              "uuid": "0a6fc3a2-981a-42b7-89da-386ba02af19d",
+              "parentUUID": "8d5ff138-5178-4cde-b28a-83f07290e007",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "65982926-9c9e-4de3-bc84-40d3539b58a6",
+            "bb1a62f9-0f32-4ac5-8a07-c3ccf116537f",
+            "0a6fc3a2-981a-42b7-89da-386ba02af19d"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 8044,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/mochawesome-report",
+        "quite": true,
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "charts": true
+      },
+      "version": "5.2.0"
+    }
+  }
+}

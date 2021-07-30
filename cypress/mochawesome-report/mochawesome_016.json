@@ -1,0 +1,132 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 1,
+    "pending": 0,
+    "failures": 1,
+    "start": "2021-07-29T06:27:51.959Z",
+    "end": "2021-07-29T06:28:04.514Z",
+    "duration": 12555,
+    "testsRegistered": 2,
+    "passPercent": 50,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "6d85c371-17ef-4145-8cd4-50e649f2dda7",
+      "title": "",
+      "fullFile": "cypress/integration/home-test.spec.js",
+      "file": "cypress/integration/home-test.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "42b0f35e-cfe1-445c-baae-7bc054d5962b",
+          "title": "To test monitors filter, verify product details then click on a monitor",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": " verify product title, price & desc",
+              "fullTitle": "To test monitors filter, verify product details then click on a monitor  verify product title, price & desc",
+              "timedOut": null,
+              "duration": 7721,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "homePage.verifyTitle();\nhomePage.verifyPrice();\nhomePage.verifyDesc();",
+              "err": {
+                "message": "CypressError: Timed out retrying after 4000ms: `cy.should()` failed because this element is detached from the DOM.\n\n`<h4 class=\"card-title\">...</h4>`\n\nCypress requires elements be attached in the DOM to interact with them.\n\nThe previous command that ran was:\n\n  > `cy.get()`\n\nThis DOM element likely became detached somewhere between the previous and current command.\n\nCommon situations why this happens:\n  - Your JS framework re-rendered asynchronously\n  - Your app code reacted to an event firing and removed the element\n\nYou typically need to re-query for the element or add 'guards' which delay Cypress from running new commands.\n\nhttps://on.cypress.io/element-has-detached-from-dom",
+                "estack": "CypressError: Timed out retrying after 4000ms: `cy.should()` failed because this element is detached from the DOM.\n\n`<h4 class=\"card-title\">...</h4>`\n\nCypress requires elements be attached in the DOM to interact with them.\n\nThe previous command that ran was:\n\n  > `cy.get()`\n\nThis DOM element likely became detached somewhere between the previous and current command.\n\nCommon situations why this happens:\n  - Your JS framework re-rendered asynchronously\n  - Your app code reacted to an event firing and removed the element\n\nYou typically need to re-query for the element or add 'guards' which delay Cypress from running new commands.\n\nhttps://on.cypress.io/element-has-detached-from-dom\n    at $Cy.ensureAttached (https://www.demoblaze.com/__cypress/runner/cypress_runner.js:144054:24)\n    at applyChainers (https://www.demoblaze.com/__cypress/runner/cypress_runner.js:137343:12)\n    at tryCatcher (https://www.demoblaze.com/__cypress/runner/cypress_runner.js:10798:23)\n    at Function.Promise.attempt.Promise.try (https://www.demoblaze.com/__cypress/runner/cypress_runner.js:8072:29)\n    at Context.shouldFn (https://www.demoblaze.com/__cypress/runner/cypress_runner.js:137375:23)\n    at Context.should (https://www.demoblaze.com/__cypress/runner/cypress_runner.js:137393:23)\n    at https://www.demoblaze.com/__cypress/runner/cypress_runner.js:133006:39\n    at assertions (https://www.demoblaze.com/__cypress/runner/cypress_runner.js:133258:14)\n    at tryCatcher (https://www.demoblaze.com/__cypress/runner/cypress_runner.js:10798:23)\n    at Object.gotValue (https://www.demoblaze.com/__cypress/runner/cypress_runner.js:9942:18)\n    at Object.gotAccum (https://www.demoblaze.com/__cypress/runner/cypress_runner.js:9929:25)\n    at Object.tryCatcher (https://www.demoblaze.com/__cypress/runner/cypress_runner.js:10798:23)\n    at Promise._settlePromiseFromHandler (https://www.demoblaze.com/__cypress/runner/cypress_runner.js:8733:31)\n    at Promise._settlePromise (https://www.demoblaze.com/__cypress/runner/cypress_runner.js:8790:18)\n    at Promise._settlePromiseCtx (https://www.demoblaze.com/__cypress/runner/cypress_runner.js:8827:10)\n    at _drainQueueStep (https://www.demoblaze.com/__cypress/runner/cypress_runner.js:5509:12)\nFrom Your Spec Code:\n    at HomePage.verifyTitle (https://www.demoblaze.com/__cypress/tests?p=cypress\\integration\\home-test.spec.js:193:26)\n    at Context.eval (https://www.demoblaze.com/__cypress/tests?p=cypress\\integration\\home-test.spec.js:139:14)",
+                "diff": null
+              },
+              "uuid": "d698aac8-92c3-4edc-9a9b-4ccb3184147c",
+              "parentUUID": "42b0f35e-cfe1-445c-baae-7bc054d5962b",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should redirect to ASUS monitor page",
+              "fullTitle": "To test monitors filter, verify product details then click on a monitor should redirect to ASUS monitor page",
+              "timedOut": null,
+              "duration": 1751,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "homePage.clickOnAsusMonitor();",
+              "err": {},
+              "uuid": "e1858316-71d0-422c-bc34-8ea81d015452",
+              "parentUUID": "42b0f35e-cfe1-445c-baae-7bc054d5962b",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "e1858316-71d0-422c-bc34-8ea81d015452"
+          ],
+          "failures": [
+            "d698aac8-92c3-4edc-9a9b-4ccb3184147c"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 9472,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/mochawesome-report",
+        "quite": true,
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "charts": true
+      },
+      "version": "5.2.0"
+    }
+  }
+}

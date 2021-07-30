@@ -1,0 +1,127 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-07-29T06:31:48.206Z",
+    "end": "2021-07-29T06:31:52.401Z",
+    "duration": 4195,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "8881ee87-2824-4475-bc20-efe3157de8b8",
+      "title": "",
+      "fullFile": "cypress/integration/product-test.spec.js",
+      "file": "cypress/integration/product-test.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "dafe6337-3a4e-4867-aab1-ec721aabcd89",
+          "title": "To Test Add to Cart functionality",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "should add item to cart & give a success message",
+              "fullTitle": "To Test Add to Cart functionality should add item to cart & give a success message",
+              "timedOut": null,
+              "duration": 1823,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "productPage.addToCart();",
+              "err": {},
+              "uuid": "732f9cc8-0b93-4649-b1c6-8d1c3b00d22b",
+              "parentUUID": "dafe6337-3a4e-4867-aab1-ec721aabcd89",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Test add to cart button color",
+              "fullTitle": "To Test Add to Cart functionality Test add to cart button color",
+              "timedOut": null,
+              "duration": 580,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "productPage.verifyButtonColor();",
+              "err": {},
+              "uuid": "ae8d24cb-e0d5-4cbf-a56b-08a60e66ec1c",
+              "parentUUID": "dafe6337-3a4e-4867-aab1-ec721aabcd89",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "732f9cc8-0b93-4649-b1c6-8d1c3b00d22b",
+            "ae8d24cb-e0d5-4cbf-a56b-08a60e66ec1c"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 2403,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/mochawesome-report",
+        "quite": true,
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "charts": true
+      },
+      "version": "5.2.0"
+    }
+  }
+}

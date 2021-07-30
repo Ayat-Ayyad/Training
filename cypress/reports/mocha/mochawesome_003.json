@@ -1,0 +1,108 @@
+{
+  "stats": {
+    "suites": 0,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-07-29T07:57:55.152Z",
+    "end": "2021-07-29T07:58:01.687Z",
+    "duration": 6535,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "cb2826c4-799d-4c34-ae42-56ccca3376c0",
+      "title": "",
+      "fullFile": "cypress/integration/task-3.spec.js",
+      "file": "cypress/integration/task-3.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [
+        {
+          "title": "land on home page and click on monitors filter, verify product details then click on monitor",
+          "fullTitle": "land on home page and click on monitors filter, verify product details then click on monitor",
+          "timedOut": null,
+          "duration": 3653,
+          "state": "passed",
+          "speed": "slow",
+          "pass": true,
+          "fail": false,
+          "pending": false,
+          "context": null,
+          "code": "homePage.openUrl();\nhomePage.clickOnMonitorLink();\nhomePage.verifyTitle();\nhomePage.verifyPrice();\nhomePage.verifyDesc();\nhomePage.clickOnAsusMonitor();",
+          "err": {},
+          "uuid": "8476d4c0-846a-4d04-acde-1c30fda6c281",
+          "parentUUID": "cb2826c4-799d-4c34-ae42-56ccca3376c0",
+          "isHook": false,
+          "skipped": false
+        },
+        {
+          "title": "add to cart",
+          "fullTitle": "add to cart",
+          "timedOut": null,
+          "duration": 898,
+          "state": "passed",
+          "speed": "slow",
+          "pass": true,
+          "fail": false,
+          "pending": false,
+          "context": null,
+          "code": "productPage.openUrl();\nproductPage.addToCart();\nproductPage.verifyButtonColor();",
+          "err": {},
+          "uuid": "e2340662-d706-46fa-80a3-c265725bf1b3",
+          "parentUUID": "cb2826c4-799d-4c34-ae42-56ccca3376c0",
+          "isHook": false,
+          "skipped": false
+        }
+      ],
+      "suites": [],
+      "passes": [
+        "8476d4c0-846a-4d04-acde-1c30fda6c281",
+        "e2340662-d706-46fa-80a3-c265725bf1b3"
+      ],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 4551,
+      "root": true,
+      "rootEmpty": false,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mocha",
+        "quite": true,
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "charts": true
+      },
+      "version": "5.2.0"
+    }
+  }
+}
